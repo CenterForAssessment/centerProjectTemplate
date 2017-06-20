@@ -3194,7 +3194,7 @@ tbody.collapse.in {
   list-style: none;
   font-size: 15px;
   text-align: left;
-  background-color: #ebfbfb;
+  background-color: #fdf5d5;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 3px;
@@ -3954,7 +3954,7 @@ tbody.collapse.in {
     .navbar-right ~ .navbar-right {
       margin-right: 0; } }
 .navbar-default {
-  background-color: #f7ffbc;
+  background-color: #fdefba;
   border-color: transparent; }
   .navbar-default .navbar-brand {
     color: #444; }
@@ -3984,7 +3984,7 @@ tbody.collapse.in {
   .navbar-default .navbar-form {
     border-color: transparent; }
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-    background-color: #ebfbfb;
+    background-color: #fdf5d5;
     color: #212121;
     border-left: 1px solid #bdd;
     border-right: 1px solid #bdd; }
