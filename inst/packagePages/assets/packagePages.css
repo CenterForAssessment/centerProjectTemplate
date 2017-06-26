@@ -1488,8 +1488,8 @@ kbd {
 
 pre {
   display: block;
-  padding: 13px;
-  margin: 0 0 13.5px;
+  padding: 10px;
+  margin: 0 5px 13.5px 5px;
   font-size: 14px;
   line-height: 1.846;
   word-break: break-all;
@@ -1502,9 +1502,9 @@ pre {
     padding: 0;
     font-size: inherit;
     color: inherit;
-    white-space: pre-wrap;
     background-color: transparent;
-    border-radius: 0; }
+    border-radius: 0;
+    overflow-x: auto; }
 
 .pre-scrollable {
   max-height: 340px;
