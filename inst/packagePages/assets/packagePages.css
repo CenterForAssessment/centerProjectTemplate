@@ -3964,7 +3964,9 @@ tbody.collapse.in {
   .navbar-default .navbar-text {
     color: #bbb; }
   .navbar-default .navbar-nav > li > a {
-    color: #444; }
+    color: #444;
+    padding-top: 5px;
+    margin-top: 5px; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
       color: #222;
       background-color: transparent; }
