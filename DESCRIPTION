@@ -5,7 +5,7 @@ Authors@R: c(
     person(given=c("Damian", "W."), family="Betebenner", email="dbetebenner@nciea.org", role=c("cre", "aut")),
     person(given=c("Adam", "R."), family="Van Iwaarden", email="avaniwaarden@gmail.com", role="aut")
   )
-Description: This is a GitHub Pages template for NCIEA GitHub projects.
+Description: This is a packagePages template for NCIEA GitHub projects.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
