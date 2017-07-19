@@ -3990,7 +3990,9 @@ tbody.collapse.in {
     border-right: 1px solid #c7c77e;
     border-top: 1px solid #c7c77e;
     border-radius: 5px 5px 0px 0px;
-    padding-bottom: 6px; }
+    padding-bottom: 6px;
+    padding-top: 5px;
+    margin-top: 5px; }
   @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
       color: #444; }
