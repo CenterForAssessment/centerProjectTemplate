@@ -114,7 +114,7 @@ code a, pre a {
 /* For shrinking navbar ------------------ */
 
 .navbar.shrink {
-    background: #fdefba;
+    background: #dede7e;
     min-height: 0;
     padding: 0 0;
     background-size: 32px auto;
