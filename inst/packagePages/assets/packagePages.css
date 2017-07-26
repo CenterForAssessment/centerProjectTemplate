@@ -3955,7 +3955,7 @@ tbody.collapse.in {
     .navbar-right ~ .navbar-right {
       margin-right: 0; } }
 .navbar-default {
-  background-color: #dede7e;
+  background-image: linear-gradient(to bottom, #f4f47e 0%, #e1e17e 100%);
   border-color: transparent; }
   .navbar-default .navbar-brand {
     color: #444; }
@@ -3987,7 +3987,7 @@ tbody.collapse.in {
   .navbar-default .navbar-form {
     border-color: transparent; }
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-    background-color: #e7e77e;
+    background-color: rgba(231, 231, 126, 0.92);
     color: #111;
     border-left: 1px solid #c7c77e;
     border-right: 1px solid #c7c77e;
