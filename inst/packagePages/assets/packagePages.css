@@ -3955,7 +3955,7 @@ tbody.collapse.in {
     .navbar-right ~ .navbar-right {
       margin-right: 0; } }
 .navbar-default {
-  background-image: linear-gradient(to bottom, #f4f47e 0%, #e1e17e 100%);
+  background-image: linear-gradient(to bottom, #f4f47e 0%, #cfe17e 100%);
   border-color: transparent; }
   .navbar-default .navbar-brand {
     color: #444; }
