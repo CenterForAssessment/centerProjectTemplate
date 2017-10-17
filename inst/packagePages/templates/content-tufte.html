@@ -1,0 +1,237 @@
+<!--  TUFTE  -->
+<!--  default.html from rmarkdown::html_document  -->
+
+$if(kable-scroll)$
+<style type="text/css">
+.kable-table {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 20px;
+  max-height: 350px;
+}
+
+.kable-table table {
+  margin-bottom: 0px;
+}
+
+.kable-table table>thead>tr>th {
+  border: none;
+  border-bottom: 2px solid #dddddd;
+}
+
+.kable-table table>thead {
+  background-color: #fff;
+}
+</style>
+$endif$
+
+
+<!--   navbar from pkgdown/packagePages   -->
+
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$$(document).ready(function () {
+  window.buildTabsets("$idprefix$TOC");
+});
+</script>
+
+<!-- code folding -->
+$if(code_menu)$
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+<script>
+$$(document).ready(function () {
+$if(source_embed)$
+  window.initializeSourceEmbed("$source_embed$");
+$endif$
+$if(code_folding)$
+  window.initializeCodeFolding("$code_folding$" === "show");
+$endif$
+});
+</script>
+$endif$
+
+
+
+$if(toc_float)$
+
+<script>
+$$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $$('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "$toc_selectors$",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+$if(toc_collapsed)$
+    options.showAndHide = true;
+$else$
+    options.showAndHide = false;
+$endif$
+$if(toc_smooth_scroll)$
+    options.smoothScroll = true;
+$else$
+    options.smoothScroll = false;
+$endif$
+
+    // tocify
+    var toc = $$("#$idprefix$TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#$idprefix$TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#$idprefix$TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+$if(toc_print)$
+$else$
+@media print {
+#$idprefix$TOC {
+  display: none !important;
+}
+}
+$endif$
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+$if(toc_collapsed)$
+$else$
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+$endif$
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="$idprefix$TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+$endif$
+
+$for(include-before)$
+$include-before$
+$endfor$
+
+
+$if(title)$
+<h1 class="title toc-ignore">$title$</h1>
+$if(subtitle)$
+<h3 class="subtitle"><em>$subtitle$</em></h3>
+$endif$
+$for(author)$
+$if(author.name)$
+<h4 class="author"><em>$author.name$</em></h4>
+$if(author.affiliation)$
+<address class="author_afil">
+$author.affiliation$<br>$endif$
+$if(author.email)$
+<a class="author_email" href="mailto:#">$author.email$</a>
+</address>
+$endif$
+$else$
+<h4 class="author"><em>$author$</em></h4>
+$endif$
+$endfor$
+$if(date)$
+<h4 class="date"><em>$date$</em></h4>
+$endif$
+$if(abstract)$
+<div class="abstract">
+<p class="abstract">Abstract</p>
+$abstract$
+</div>
+$endif$
+$endif$
+
+
+
+$if(toc_float)$
+$else$
+$if(toc)$
+<div id="$idprefix$TOC">
+$toc$
+</div>
+$endif$
+$endif$
+
+$body$
+
+$for(include-after)$
+$include-after$
+$endfor$
