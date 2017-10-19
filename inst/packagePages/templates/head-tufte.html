@@ -17,11 +17,15 @@
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600" rel="stylesheet" type="text/css">
 
-<!-- packagePages -->
+<!-- CSS/JS MUST BE LOADED IN GIVEN ORDER -->
 <link href="{{#site}}{{root}}{{/site}}pkgdown.css" rel="stylesheet">
 <link href="{{#site}}{{root}}{{/site}}tufte.css" rel="stylesheet">
 <script src="{{#site}}{{root}}{{/site}}jquery.sticky-kit.min.js"></script>
-<script src="{{#site}}{{root}}{{/site}}pkgdown.js"></script>
+<script src="{{#site}}{{root}}{{/site}}pkgdown-tufte.js"></script>
+$for(header-includes)$
+$header-includes$
+$endfor$
+<link href="{{#site}}{{root}}{{/site}}packagePages.css" rel="stylesheet">
 
 <!-- mathjax -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
@@ -31,11 +35,6 @@
 
 <!--  TUFTE  -->
 <!--  default.html from rmarkdown::html_document  -->
-
-$for(header-includes)$
-$header-includes$
-$endfor$
-<link href="{{#site}}{{root}}{{/site}}packagePages.css" rel="stylesheet">
 
 $if(highlightjs)$
 <style type="text/css">code{white-space: pre;}</style>
