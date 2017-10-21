@@ -27,6 +27,9 @@ $header-includes$
 $endfor$
 <link href="{{#site}}{{root}}{{/site}}packagePages.css" rel="stylesheet">
 
+<!-- Bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 <!-- mathjax -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -74,9 +77,12 @@ $if(theme)$
 $endif$
 $endif$
 
+
+<!--
 $for(css)$
 <link rel="stylesheet" href="$css$" $if(html5)$$else$type="text/css" $endif$/>
 $endfor$
+-->
 
 <!--
 $if(abstract)$

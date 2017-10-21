@@ -3221,6 +3221,7 @@ tbody.collapse.in {
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
   text-decoration: none;
+  background-color: rgba(240, 244, 126, 0.92);
   color: black; }
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
@@ -3997,6 +3998,9 @@ tbody.collapse.in {
     padding-bottom: 6px;
     padding-top: 5px;
     margin-top: 5px; }
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #222;
+    background-color: transparent; }
   @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
       color: #444; }
@@ -6515,3 +6519,23 @@ input[type="checkbox"],
 
 .carousel-caption h1, .carousel-caption h2, .carousel-caption h3, .carousel-caption h4, .carousel-caption h5, .carousel-caption h6 {
   color: inherit; }
+
+/* Custom Stuff */
+
+#TOC {
+    margin: 25px 0px 20px -40px;
+}
+
+.tocify {
+    border-radius: 2px;
+    border: 1px solid #444;
+}
+
+.gist-it-gist .gist-file .gist-data, .gister-gist .gist-file .gist-data {
+    background-color: #f1f1f1;
+}
+
+.gist-meta {
+    background-color: #fdfdfd;
+    font-family: sans-serif;
+}
