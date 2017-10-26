@@ -5,11 +5,11 @@
 
 <title>{{#site}}{{title}}{{/site}} • {{{pagetitle}}}</title>
 
-<!-- jquery -->
-<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
-
 <!-- Bootstrap -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
 
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
@@ -20,15 +20,12 @@
 <!-- CSS/JS MUST BE LOADED IN GIVEN ORDER -->
 <link href="{{#site}}{{root}}{{/site}}pkgdown.css" rel="stylesheet">
 <link href="{{#site}}{{root}}{{/site}}tufte.css" rel="stylesheet">
-<script src="{{#site}}{{root}}{{/site}}jquery.sticky-kit.min.js"></script>
-<script src="{{#site}}{{root}}{{/site}}pkgdown-tufte.js"></script>
 $for(header-includes)$
 $header-includes$
 $endfor$
+<script src="{{#site}}{{root}}{{/site}}jquery.sticky-kit.min.js"></script>
+<script src="{{#site}}{{root}}{{/site}}pkgdown-tufte.js"></script>
 <link href="{{#site}}{{root}}{{/site}}packagePages.css" rel="stylesheet">
-
-<!-- Bootstrap -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <!-- mathjax -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
@@ -48,6 +45,7 @@ $if(theme)$
   }
 </style>
 $endif$
+
 <script type="text/javascript">
 if (window.hljs && document.readyState && document.readyState === "complete") {
    window.setTimeout(function() {
@@ -76,7 +74,6 @@ $if(theme)$
 </style>
 $endif$
 $endif$
-
 
 <!--
 $for(css)$
