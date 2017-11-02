@@ -6001,9 +6001,7 @@ button {
   letter-spacing: .1px; }
 
 a {
-  -webkit-transition: all 0.25s;
-  -o-transition: all 0.25s;
-  transition: all 0.25s; }
+  -o-transition: all 0.25s; }
 
 .table-hover > tbody > tr,
 .table-hover > tbody > tr > th,
