@@ -80,13 +80,27 @@ pre, code {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
-pre img {
+pre code {
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
+}
+
+pre .img {
+  margin: 5px 0;
+}
+
+pre .img img {
   background-color: #fff;
   display: block;
 }
 
 code a, pre a {
   color: #375f84;
+}
+
+a.sourceLine:hover {
+  text-decoration: none;
 }
 
 .fl      {color: #1514b5;}
@@ -267,4 +281,21 @@ a.anchor {
 .fa-twitter {
   font-size: 28px;
   color: #444;
+}
+
+/* Clipboard --------------------------*/
+
+.hasCopyButton {
+  position: relative;
+}
+
+.btn-copy-ex {
+  position: absolute;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+}
+
+.hasCopyButton:hover button.btn-copy-ex {
+  visibility: visible;
 }
