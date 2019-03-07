@@ -1,6 +1,6 @@
 Package: centerProjectTemplate
 Title: 'packagePages' Template for National Center for the Improvement of Educational Assessment (NCIEA) projects
-Version: 0.0-2.28
+Version: 0.0-3.0
 Authors@R: c(
     person(given=c("Damian", "W."), family="Betebenner", email="dbetebenner@nciea.org", role=c("cre", "aut")),
     person(given=c("Adam", "R."), family="Van Iwaarden", email="avaniwaarden@gmail.com", role="aut")
