@@ -69,22 +69,57 @@ body {
 /* Syntax highlighting ---------------------------------------------------- */
 
 pre {
+  display: block;
+  padding: 10px;
+  margin: 0 5px 13.5px 5px;
+  font-size: 13px;
+  line-height: 1.846;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #212121;
+  background-color: #fafafa;
+  border: 0.1px solid #f5f5f5;
+  border-radius: 3px;
+}
+
+pre code {
+    padding: 0;
+    font-size: 13px;
+    color: inherit;
+    background-color: transparent;
+    border-radius: 0;
+    overflow-x: auto;
+}
+
+/*
+pre {
   word-wrap: normal;
   word-break: normal;
   border: none;
 }
 
-pre, code {
-  background-color: #fafafa;
-  color: #000000;
+pre code {
+  background-color: #ftf5f5;
+  color: inherit;
+  padding: 0;
+  font-size: 13px;
+  background-color: transparent;
+  border-radius: 0;
+  overflow-x: auto;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
-pre code {
-  overflow: auto;
-  word-wrap: normal;
-  white-space: pre;
+.sourceCode {
+  background-color: #f5f5f5;
+  color: inherit;
+  padding: 0;
+  font-size: 13px;
+  background-color: transparent;
+  border-radius: 0;
+  overflow-x: auto;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
+*/
 
 pre .img {
   margin: 5px 0;
@@ -130,15 +165,18 @@ a.sourceLine:hover {
 .navbar.shrink {
     min-height: 0;
     padding: 0 0;
+    background-size: 32px auto;
 }
 
 .navbar-brand.shrink {
     padding: 0 0 0 54px;
     background-size: 32px auto;
+    transition-duration: 0.25s;
 }
 
 .navbar-label.shrink {
     font-size: 32px;
+    transition-duration: 0.25s;
 }
 
 /* Reference index & topics ----------------------------------------------- */
@@ -275,30 +313,28 @@ a.anchor {
 
 .fa-github {
   font-size: 28px;
-  color: #444;
+  color: #7c7c7c;
   -webkit-text-stroke-width: 0px;
   -webkit-text-stroke-color: black;
-  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease-in-out;
 }
 
 .fa-github:hover {
-  color: #FFF;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: black;
-  transition: all 0.35s ease;
+  color: black;
+  transition: all 0.35s ease-in-out;
 }
 
-fa-twitter {
+.fa-twitter {
   font-size: 28px;
-  color: #444;
-  transition: all 0.35s ease;
+  color: #7c7c7c;
+  transition: all 0.35s ease-in-out;
 }
 
 .fa-twitter:hover {
   color: #00ACED;
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: black;
-  transition: all 0.35s ease;
+  transition: all 0.35s ease-in-out;
 }
 
 /* Clipboard --------------------------*/
